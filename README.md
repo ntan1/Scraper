@@ -1,1 +1,2 @@
-# Scraper
+# scraper
+Scrapes news site

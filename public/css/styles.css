@@ -1,0 +1,58 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: 100vh;
+    
+    font-family: sans-serif;
+}
+
+.section-heading {
+    text-align: center;
+    text-decoration: underline;
+    height: 70px;
+}
+
+.headlines,
+.story,
+.comments {
+    overflow: scroll;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.headlines h1 {
+    text-align: center;
+}
+
+.headline:hover {
+    cursor: pointer;
+}
+
+.headline > a {
+    font-weight: 400;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.headline > p { 
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+.article {
+    padding: 15px;
+}
+
+.story-heading {
+    text-align: center;
+}
+
+.comment-author {
+    font-weight: bold;
+    text-transform: capitalize;
+}

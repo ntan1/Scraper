@@ -1,0 +1,31 @@
+<main>
+    <div class="headlines">
+        <h1 class="section-heading">Articles</h1>
+        <div class="headlines-content">
+            {{#each articles}}
+                <div class="headline" data-story="{{_id}}" onClick="loadStory('{{_id}}')">
+                    <a>{{headline}}</a>
+                    <p>{{summary}}</p>
+                    <hr>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+    <div class="story">
+        <h1 class="section-heading">Story</h1>
+        <h2 class="story-heading"></h2>
+        <div class="story-content">
+        </div>
+    </div>
+    <div class="comments">
+        <h1 class="section-heading">Comments</h1>
+        <div class="comments-section" hidden>
+            <div class="comments-content"></div>
+            <hr>
+            <h4>Add your own comment</h4>
+            <input id="new-comment-author" type="text" placeholder="Name"> 
+            <br> <input id="new-comment-content" type="text" placeholder="Comment">
+            <br> <button id="submit" onclick="submitComment()">Submit</button>
+        </div>
+    </div>
+</main>
